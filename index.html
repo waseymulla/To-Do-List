@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="./styles.css" />
+    <!-- <link rel="backend" href="./backend.js" /> -->
+  </head>
+
+  <body>
+    <h1>TO-DO List</h1>
+    <form class="form-container" id="task-form">
+      <h3>Create Task:</h3>
+      <h4 >Task Title:</h4>
+      <input placeholder="Task Name"  id="task-name"  required/>
+      <h4>Date:</h4>
+      <input type="date" id="task-date"/>
+      <h4>Task Description:</h4>
+      <textarea placeholder="Describe Task" id="task-desc"> </textarea>
+      <button type="submit">Add Task</button>
+    </form>
+
+    <form class="form-container" id="filter-form">
+      <h3>Filter By:</h3>
+      <h4>By content:</h4>
+      <input placeholder="Type...." id="filter-name"/>
+      <h4>By Date</h4>
+      <input type="date" id="filter-date"/>
+      <button>Search</button>
+    </form>
+
+
+    <div id="task-list">
+      <h3>Tasks:</h3>
+      
+    </div>
+    <script src="./backend.js"></script>
+  </body>
+</html>
